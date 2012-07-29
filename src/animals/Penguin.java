@@ -25,7 +25,7 @@ public class Penguin extends Animal
                     float rightFootLength,
                     float beakLength )
     {
-        System.out.println("Creating a penguin");
+        System.out.println( "Creating a penguin" );
 
         // Store values
         this.age = age;
@@ -37,5 +37,12 @@ public class Penguin extends Animal
         rightFoot = new Foot( leftFootLength );
         leftFoot = new Foot( rightFootLength );
         beak = new Beak( beakLength );
+    }
+
+    public void waddle()
+    {
+        System.out.println( "Creating a penguin" );
+        leftFoot.moveForward();
+        rightFoot.moveForward();
     }
 }

@@ -8,10 +8,17 @@ package animals.parts;
 public class Foot
 {
     float length;
+    int   location;
 
     public Foot( float length )
     {
-        System.out.println("Creating a foot");
+        System.out.println( "Creating a foot" );
         this.length = length;
+        location = 0;
+    }
+
+    public void moveForward()
+    {
+        location++;
     }
 }
