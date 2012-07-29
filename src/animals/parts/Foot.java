@@ -21,4 +21,9 @@ public class Foot
     {
         location++;
     }
+
+    public void flap()
+    {
+        location += 2;
+    }
 }

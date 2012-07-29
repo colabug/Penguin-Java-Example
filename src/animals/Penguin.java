@@ -41,8 +41,15 @@ public class Penguin extends Animal
 
     public void waddle()
     {
-        System.out.println( "Creating a penguin" );
+        System.out.println( "Waddling" );
         leftFoot.moveForward();
         rightFoot.moveForward();
+    }
+
+    public void swim()
+    {
+        System.out.println( "Swimming" );
+        rightFoot.flap();
+        leftFoot.flap();
     }
 }
