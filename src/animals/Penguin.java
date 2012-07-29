@@ -17,6 +17,8 @@ public class Penguin extends Animal
     Foot leftFoot;
     Beak beak;
 
+    boolean isHungry;
+
     public Penguin( int age,
                     int weight,
                     String leftEyeColor,
@@ -30,6 +32,8 @@ public class Penguin extends Animal
         // Store values
         this.age = age;
         this.weight = weight;
+
+        isHungry = true;
 
         // Construct new objects from parameters
         leftEye = new Eye( leftEyeColor );
@@ -51,5 +55,11 @@ public class Penguin extends Animal
         System.out.println( "Swimming" );
         rightFoot.flap();
         leftFoot.flap();
+    }
+
+    public void eat( Fish fish )
+    {
+        System.out.println( "Swimming" );
+        isHungry = false;
     }
 }
