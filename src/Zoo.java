@@ -7,18 +7,40 @@ import animals.Penguin;
  */
 public class Zoo
 {
-    Penguin waddles;
-    Penguin fluffy;
+    static final int NUMBER_OF_PENGUINS = 2;
+
+    Penguin[] penguins;
 
     public Zoo()
     {
-        waddles = new Penguin( 10, 150, "green", "blue", 12.0f, 11.0f, 6.0f );
-        fluffy = new Penguin( 2, 2000, "black", "black", 24.0f, 24.0f, 10.0f );
+        penguins = new Penguin[NUMBER_OF_PENGUINS];
+        penguins[0] = new Penguin( "Waddles",
+                                   10,
+                                   150,
+                                   "green",
+                                   "blue",
+                                   12.0f,
+                                   11.0f,
+                                   6.0f );
+
+        penguins[1] = new Penguin( "Fluffy",
+                                   2,
+                                   2000,
+                                   "black",
+                                   "black",
+                                   24.0f,
+                                   24.0f,
+                                   10.0f );
     }
 
-    public static void main(String[] argv)
+    public static void main( String[] argv )
     {
         Zoo zoo = new Zoo();
         System.out.println("Hello, I have a zoo!");
+    }
+
+    public Penguin[] getPenguins()
+    {
+        return penguins;
     }
 }

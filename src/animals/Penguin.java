@@ -11,6 +11,8 @@ import animals.parts.Foot;
  */
 public class Penguin extends Animal
 {
+    String name;
+
     Eye  leftEye;
     Eye  rightEye;
     Foot rightFoot;
@@ -19,7 +21,8 @@ public class Penguin extends Animal
 
     boolean isHungry;
 
-    public Penguin( int age,
+    public Penguin( String name,
+                    int age,
                     int weight,
                     String leftEyeColor,
                     String rightEyeColor,
@@ -30,6 +33,7 @@ public class Penguin extends Animal
         System.out.println( "Creating a penguin" );
 
         // Store values
+        this.name =  name;
         this.age = age;
         this.weight = weight;
 
