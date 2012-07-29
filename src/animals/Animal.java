@@ -7,6 +7,6 @@ package animals;
  */
 public abstract class Animal
 {
-    int age = 0;
+    int age    = 0;
     int weight = 0;
 }

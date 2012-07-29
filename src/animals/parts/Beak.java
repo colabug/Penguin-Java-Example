@@ -11,7 +11,7 @@ public class Beak
 
     public Beak( float length )
     {
-        System.out.println("Creating a beak");
+        System.out.println( "Creating a beak" );
 
         this.length = length;
     }

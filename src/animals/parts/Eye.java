@@ -11,7 +11,7 @@ public class Eye
 
     public Eye( String color )
     {
-        System.out.println("Creating an eye");
+        System.out.println( "Creating an eye" );
 
         this.color = color;
     }
