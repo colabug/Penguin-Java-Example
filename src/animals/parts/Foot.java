@@ -26,4 +26,10 @@ public class Foot
     {
         location += 2;
     }
+
+    @Override
+    public String toString()
+    {
+        return "length = " + length;
+    }
 }

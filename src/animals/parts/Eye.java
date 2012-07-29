@@ -15,4 +15,10 @@ public class Eye
 
         this.color = color;
     }
+
+    @Override
+    public String toString()
+    {
+        return "color = " + color;
+    }
 }

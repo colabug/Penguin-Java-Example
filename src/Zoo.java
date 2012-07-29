@@ -35,8 +35,15 @@ public class Zoo
 
     public static void main( String[] argv )
     {
+        System.out.println( "Hello, I have a zoo!" );
         Zoo zoo = new Zoo();
-        System.out.println("Hello, I have a zoo!");
+
+        Penguin[] penguins = zoo.getPenguins();
+        System.out.println( "The zoo has " + penguins.length + " penguins" );
+        for ( Penguin penguin : penguins )
+        {
+            System.out.println( penguin.toString() );
+        }
     }
 
     public Penguin[] getPenguins()

@@ -66,4 +66,18 @@ public class Penguin extends Animal
         System.out.println( "Swimming" );
         isHungry = false;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Penguin { " +
+               "name = " + name +
+               ", left eye " + leftEye +
+               ", right eye " + rightEye +
+               ", left foot " + leftFoot +
+               ", right foot " + rightFoot +
+               ", Beak " + beak +
+               ", isHungry = " + isHungry +
+               " }";
+    }
 }

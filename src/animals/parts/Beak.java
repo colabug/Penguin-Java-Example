@@ -15,4 +15,10 @@ public class Beak
 
         this.length = length;
     }
+
+    @Override
+    public String toString()
+    {
+        return "length = " + length;
+    }
 }
