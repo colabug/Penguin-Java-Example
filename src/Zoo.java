@@ -1,3 +1,4 @@
+import animals.Fish;
 import animals.Penguin;
 
 /**
@@ -42,7 +43,10 @@ public class Zoo
         System.out.println( "The zoo has " + penguins.length + " penguins" );
         for ( Penguin penguin : penguins )
         {
-            System.out.println( penguin.toString() );
+            System.out.println( "\t" + penguin.toString() );
+            penguin.waddle();
+            penguin.swim();
+            penguin.eat( new Fish() );
         }
     }
 
