@@ -14,6 +14,9 @@ INSTRUCTIONS
   * We will review the homework and any questions you may have about the
     assignment at the beginning of class 2.
 
+  * When finished with the main assignment, commit your changes using the
+    desktop client and push your work to your github account.
+
 HOMEWORK
 
   1. Add another penguin to the zoo by adding an entry to the penguin array.
@@ -27,24 +30,21 @@ HOMEWORK
   3. When a penguin swims, it loses five pounds. Update the class to reflect
      this behavior.
 
+  4. A penguin dies when it weighs 0 pounds. Add a function to check the weight
+     before a penguin swims. Add a way to track if a penguin is dead.
+
+  5. Add an aquarium to hold fish.
+
+  6. Add three fish to the aquarium.
+
+  7. Add the aquarium to the zoo and add print statements to describe it.
+
 OBJECTIVES
 
   * Become familiar with IntelliJ.
+
   * Practice with Java variables, functions, arrays, math operations,
     and objects.
+
   * Become comfortable with github, checking out a repository, and pushing
     changes to github.com.
-
-EXTRA CREDIT
-
-  1. When finished with the main assignment, commit your changes and push your
-     work to your github account.
-
-  2. A penguin dies when it weighs 0 pounds. Add a function to check the weight
-     before a penguin swims. Add a way to track if a penguin is dead.
-
-  3. Add an aquarium to hold fish.
-
-  4. Add three fish to the aquarium.
-
-  5. Add the aquarium to the zoo and add print statements to describe it.
