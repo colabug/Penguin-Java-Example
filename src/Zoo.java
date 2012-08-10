@@ -15,6 +15,7 @@ public class Zoo
     public Zoo()
     {
         penguins = new Penguin[NUMBER_OF_PENGUINS];
+        System.out.println( "\nCreating a penguin!" );
         penguins[0] = new Penguin( "Waddles", // Name
                                    10,        // Age
                                    150,       // Weight
@@ -24,6 +25,7 @@ public class Zoo
                                    12.0f,     // Left foot length
                                    6.0f );    // Beak length
 
+        System.out.println( "\nCreating a penguin!" );
         penguins[1] = new Penguin( "Fluffy",         // Name
                                    2, 2000,          // Age & weight
                                    "black", "black", // Eyes
@@ -50,7 +52,7 @@ public class Zoo
         {
             penguin.waddle();
             penguin.swim();
-            penguin.eat( new Fish( "Nemo" ) );
+            penguin.eat( new Fish( "Nemo", 0, 25 ) );
             System.out.println( "\t" + penguin.toString() );
             System.out.println();
         }

@@ -28,12 +28,8 @@ public class Penguin extends Animal
                     float leftFootLength,
                     float beakLength )
     {
-        System.out.println( "\nCreating a penguin!" );
-
-        // Store values
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
+        super( name, age, weight );
+        System.out.println( "\tPenguin()" );
 
         isHungry = true;
 
