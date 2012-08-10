@@ -59,6 +59,7 @@ public class Penguin extends Animal
     public void eat( Fish fish )
     {
         System.out.println( "\t" + name + " is eating fish " + fish.name );
+        weight += fish.weight;
         isHungry = false;
     }
 
