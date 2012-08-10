@@ -7,8 +7,9 @@ package animals;
  */
 public class Fish extends Animal
 {
-    public Fish()
+    public Fish( String name )
     {
-        System.out.println( "Creating a fish" );
+        System.out.println( "\t--Creating a fish with name " + name );
+        this.name = name;
     }
 }

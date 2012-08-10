@@ -11,8 +11,6 @@ import animals.parts.Foot;
  */
 public class Penguin extends Animal
 {
-    String name;
-
     Eye  leftEye;
     Eye  rightEye;
     Foot rightFoot;
@@ -24,46 +22,47 @@ public class Penguin extends Animal
     public Penguin( String name,
                     int age,
                     int weight,
-                    String leftEyeColor,
                     String rightEyeColor,
-                    float leftFootLength,
+                    String leftEyeColor,
                     float rightFootLength,
+                    float leftFootLength,
                     float beakLength )
     {
-        System.out.println( "Creating a penguin" );
+        System.out.println( "\nCreating a penguin!" );
 
         // Store values
-        this.name =  name;
+        this.name = name;
         this.age = age;
         this.weight = weight;
 
         isHungry = true;
 
         // Construct new objects from parameters
-        leftEye = new Eye( leftEyeColor );
-        rightEye = new Eye( rightEyeColor );
-        rightFoot = new Foot( leftFootLength );
-        leftFoot = new Foot( rightFootLength );
-        beak = new Beak( beakLength );
+        leftEye   = new Eye(  leftEyeColor    );
+        rightEye  = new Eye(  rightEyeColor   );
+        rightFoot = new Foot( leftFootLength  );
+        leftFoot  = new Foot( rightFootLength );
+        beak      = new Beak( beakLength      );
     }
 
     public void waddle()
     {
-        System.out.println( "Waddling" );
+        System.out.println( "\t" + name + " is waddling." );
         leftFoot.moveForward();
         rightFoot.moveForward();
     }
 
     public void swim()
     {
-        System.out.println( "Swimming" );
+        System.out.println( "\t" + name + " is swimming." );
+
         rightFoot.flap();
         leftFoot.flap();
     }
 
     public void eat( Fish fish )
     {
-        System.out.println( "Eating" );
+        System.out.println( "\t" + name + " is eating fish " + fish.name );
         isHungry = false;
     }
 
@@ -71,13 +70,15 @@ public class Penguin extends Animal
     public String toString()
     {
         return "Penguin { " +
-               "name = " + name +
-               ", left eye " + leftEye +
-               ", right eye " + rightEye +
-               ", left foot " + leftFoot +
+               "name = "       + name      +
+               ", age = "      + age       +
+               ", weight = "   + weight    +
+               ", right eye "  + rightEye  +
+               ", left eye "   + leftEye   +
                ", right foot " + rightFoot +
-               ", Beak " + beak +
-               ", isHungry = " + isHungry +
+               ", left foot "  + leftFoot  +
+               ", Beak "       + beak      +
+               ", isHungry = " + isHungry  +
                " }";
     }
 }

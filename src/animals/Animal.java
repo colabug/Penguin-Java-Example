@@ -7,6 +7,7 @@ package animals;
  */
 public abstract class Animal
 {
+    String name;
     int age    = 0;
     int weight = 0;
 }

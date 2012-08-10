@@ -15,23 +15,20 @@ public class Zoo
     public Zoo()
     {
         penguins = new Penguin[NUMBER_OF_PENGUINS];
-        penguins[0] = new Penguin( "Waddles",
-                                   10,
-                                   150,
-                                   "green",
-                                   "blue",
-                                   12.0f,
-                                   11.0f,
-                                   6.0f );
+        penguins[0] = new Penguin( "Waddles", // Name
+                                   10,        // Age
+                                   150,       // Weight
+                                   "blue",    // Right eye color
+                                   "green",   // Left eye color
+                                   11.0f,     // Right foot length
+                                   12.0f,     // Left foot length
+                                   6.0f );    // Beak length
 
-        penguins[1] = new Penguin( "Fluffy",
-                                   2,
-                                   2000,
-                                   "black",
-                                   "black",
-                                   24.0f,
-                                   24.0f,
-                                   10.0f );
+        penguins[1] = new Penguin( "Fluffy",         // Name
+                                   2, 2000,          // Age & weight
+                                   "black", "black", // Eyes
+                                   24.0f, 24.0f,     // Feet
+                                   10.0f );          // Beak
     }
 
     public static void main( String[] argv )
@@ -40,13 +37,22 @@ public class Zoo
         Zoo zoo = new Zoo();
 
         Penguin[] penguins = zoo.getPenguins();
-        System.out.println( "The zoo has " + penguins.length + " penguins" );
+        System.out.println();
+        System.out.println( "The zoo has " + penguins.length + " penguins:" );
         for ( Penguin penguin : penguins )
         {
             System.out.println( "\t" + penguin.toString() );
+        }
+
+        System.out.println();
+        System.out.println( "Penguin actions:" );
+        for ( Penguin penguin : penguins )
+        {
             penguin.waddle();
             penguin.swim();
-            penguin.eat( new Fish() );
+            penguin.eat( new Fish( "Nemo" ) );
+            System.out.println( "\t" + penguin.toString() );
+            System.out.println();
         }
     }
 

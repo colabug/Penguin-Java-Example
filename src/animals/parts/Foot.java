@@ -12,7 +12,7 @@ public class Foot
 
     public Foot( float length )
     {
-        System.out.println( "Creating a foot" );
+        System.out.println( "\t--Creating a foot with length " + length );
         this.length = length;
         location = 0;
     }
