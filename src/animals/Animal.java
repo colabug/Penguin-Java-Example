@@ -5,7 +5,7 @@ package animals;
  * Date: 7/29/12
  * Purpose: GDI classroom example
  */
-public abstract class Animal
+public class Animal
 {
     String name   = "";
     int    age    = 0;
